@@ -6,7 +6,9 @@ const {
 } = require('../models')
 
 class ProfileController {
-
+  static profilePage(req, res) {
+    res.render('profile')
+  }
 }
 
 module.exports = ProfileController

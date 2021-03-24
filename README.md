@@ -17,4 +17,7 @@ TO-DO LIST
 - populate data di profile
 - skoring tes sama populate tes di page
 - session, middleware, sama instance method
-- fitur logout, taruh navbar aja kayanya biar simpel
+
+
+DONT LIST
+- Routes kurang lebih udah selesai, tinggal populate dan nampilin tes aja kayanya

@@ -1,15 +1,20 @@
 const loginRouter = require('./login')
 const personalityRouter = require('./personalities')
 const registerRouter = require('./register')
-
+const isLoginMiddleware = require('../middlewares/loginMiddleware.js')
+const logoutRouter = require('./logout')
+const testRouter = require('./test')
+const profileRouter = require('./profile')
 const router = require('express').Router()
 
 router.get('/', (req, res) => {
-  res.send('hello') // <<<<<<<<<<< ini halaman home
+  res.render('home-page')
 })
 
 router.use('/login', loginRouter)
 router.use('/register', registerRouter)
-router.use('/personalties', personalityRouter)
-
+router.use('/logout', logoutRouter)
+router.use('/profile', isLoginMiddleware, profileRouter)
+router.use('/personalities', personalityRouter)
+router.use('/test-mbti', isLoginMiddleware, testRouter)
 module.exports = router

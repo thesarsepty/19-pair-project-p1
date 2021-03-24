@@ -2,10 +2,16 @@ const express = require('express')
 const app = express()
 const port = 3000
 const router = require('./routes/index.js')
-
-app.use(express.static('public')) //kalo mau pake css eksternal ke folder public
+const session = require('express-session')
 
 app.set('view engine', 'ejs')
+
+app.use(session({
+  secret: 'coba dulu aja',
+  resave: false,
+  saveUninitialized: true
+}))
+app.use(express.static('public')) //kalo mau pake css eksternal ke folder public
 app.use(express.urlencoded({
   extended: false
 }))

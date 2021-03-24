@@ -9,7 +9,7 @@ class Login {
     res.render('login-page')
   }
 
-  static loginCheck(req, res) {
+  static loginCheck(req, res, next) {
 
     Profile.findOne({
         where: {
@@ -19,7 +19,8 @@ class Login {
       .then((data) => {
         let password = BcryptPassword.checkHash(req.body.password, data.password)
         if (password) {
-          res.send('sukses')
+          req.session.isLogin = true
+          res.redirect('/')
         } else {
           res.redirect('/login')
         }

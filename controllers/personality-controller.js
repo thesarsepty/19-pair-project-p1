@@ -2,71 +2,71 @@ const express = require('express')
 
 class Personality {
   static showAll(req, res) {
-    res.render('explanation')
+    res.render('explanation-page')
   }
 
   static enfj(req, res) {
-    res.render('personalities/enfj')
+    res.render('./personalities/enfj')
   }
 
   static enfp(req, res) {
-    res.render('personalities/enfp')
+    res.render('./personalities/enfp')
   }
 
   static entj(req, res) {
-    res.render('personalities/entj')
+    res.render('./personalities/entj')
   }
 
   static entp(req, res) {
-    res.render('personalities/entp')
+    res.render('./personalities/entp')
   }
 
   static esfj(req, res) {
-    res.render('personalities/esfj')
+    res.render('./personalities/esfj')
   }
 
   static esfp(req, res) {
-    res.render('personalities/esfp')
+    res.render('./personalities/esfp')
   }
 
   static estj(req, res) {
-    res.render('personalities/estj')
+    res.render('./personalities/estj')
   }
 
   static estp(req, res) {
-    res.render('personalities/estp')
+    res.render('./personalities/estp')
   }
 
   static infj(req, res) {
-    res.render('personalities/infj')
+    res.render('./personalities/infj')
   }
 
   static infp(req, res) {
-    res.render('personalities/infp')
+    res.render('./personalities/infp')
   }
 
   static intj(req, res) {
-    res.render('personalities/intj')
+    res.render('./personalities/intj')
   }
 
   static intp(req, res) {
-    res.render('personalities/intp')
+    res.render('./personalities/intp')
   }
 
   static isfj(req, res) {
-    res.render('personalities/isfj')
+    res.render('./personalities/isfj')
   }
 
   static isfp(req, res) {
-    res.render('personalities/isfp')
+    res.render('./personalities/isfp')
   }
 
   static istj(req, res) {
-    res.render('personalities/istj')
+    res.render('./personalities/istj')
   }
 
   static istp(req, res) {
-    res.render('personalities/istp')
+    res.render('./personalities/istp')
   }
 }
 
