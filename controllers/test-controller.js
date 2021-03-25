@@ -105,7 +105,7 @@ class MBTI {
         id2 = mbti.getSN(data)
         id3 = mbti.getTF(data)
         id4 = mbti.getPJ(data)
-
+        let idComp = [1, 2]
         let obj = {
           ComponentId: id1,
           ProfileId: req.session.dataId
@@ -123,7 +123,7 @@ class MBTI {
           ComponentId: id2,
           ProfileId: req.session.dataId
         }
-
+        let idComp = [3, 4]
         return ComponentProfile.update(obj, {
           where: {
             ProfileId: req.session.dataId,
@@ -136,7 +136,7 @@ class MBTI {
           ComponentId: id3,
           ProfileId: req.session.dataId
         }
-
+        let idComp = [5, 6]
         return ComponentProfile.update(obj, {
           where: {
             ProfileId: req.session.dataId,
@@ -149,7 +149,7 @@ class MBTI {
           ComponentId: id4,
           ProfileId: req.session.dataId
         }
-
+        let idComp = [7, 8]
         return ComponentProfile.update(obj, {
           where: {
             ProfileId: req.session.dataId,
