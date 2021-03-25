@@ -1,12 +1,164 @@
 const express = require('express')
+const {
+  Profile,
+  ComponentProfile
+} = require('../models')
 
 class MBTI {
-  static testPage(req, res) {
-    res.render('test-personality-page')
+  static chooseTestType(req, res) {
+    res.render('choose-test')
   }
 
-  static testResult(req, res) {
-    console.log(req.body)
+  static firstTestPage(req, res) {
+    ComponentProfile.findOne({
+        where: {
+          ProfileId: req.session.dataId
+        }
+      })
+      .then((data) => {
+        if (data) {
+          res.send('udah pernah tes lu bos')
+        } else {
+          throw err
+        }
+      })
+      .catch(err => res.render('test-personality-page'))
+
+  }
+
+  static firstTestResult(req, res) {
+    let mbti = new Profile()
+    let id1;
+    let id2;
+    let id3;
+    let id4;
+
+    Profile.scoring(req.body)
+      .then((data) => {
+        id1 = mbti.getIE(data)
+        id2 = mbti.getSN(data)
+        id3 = mbti.getTF(data)
+        id4 = mbti.getPJ(data)
+
+        let obj = {
+          ComponentId: id1,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.create(obj)
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id2,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.create(obj)
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id3,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.create(obj)
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id4,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.create(obj)
+      })
+      .then(() => res.redirect('/'))
+      .catch(err => res.send(err))
+  }
+
+  static retestPage(req, res) {
+    console.log(req.session.dataId)
+    ComponentProfile.findOne({
+        where: {
+          ProfileId: req.session.dataId
+        }
+      })
+      .then((data) => {
+        if (data) {
+          res.render('test-personality-page-retest')
+        } else {
+          throw err
+        }
+      })
+      .catch(err => res.send('belom pernah test lu bos'))
+  }
+
+  static retestResult(req, res) {
+    let mbti = new Profile()
+    let id1;
+    let id2;
+    let id3;
+    let id4;
+
+    Profile.scoring(req.body)
+      .then((data) => {
+        id1 = mbti.getIE(data)
+        id2 = mbti.getSN(data)
+        id3 = mbti.getTF(data)
+        id4 = mbti.getPJ(data)
+
+        let obj = {
+          ComponentId: id1,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.update(obj, {
+          where: {
+            ProfileId: req.session.dataId,
+            ComponentId: idComp
+          }
+        })
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id2,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.update(obj, {
+          where: {
+            ProfileId: req.session.dataId,
+            ComponentId: idComp
+          }
+        })
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id3,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.update(obj, {
+          where: {
+            ProfileId: req.session.dataId,
+            ComponentId: idComp
+          }
+        })
+      })
+      .then(() => {
+        let obj = {
+          ComponentId: id4,
+          ProfileId: req.session.dataId
+        }
+
+        return ComponentProfile.update(obj, {
+          where: {
+            ProfileId: req.session.dataId,
+            ComponentId: idComp
+          }
+        })
+      })
+      .then(() => res.redirect('/'))
+      .catch(err => res.send(err))
   }
 }
 

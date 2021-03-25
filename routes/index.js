@@ -17,4 +17,5 @@ router.use('/logout', logoutRouter)
 router.use('/profile', isLoginMiddleware, profileRouter)
 router.use('/personalities', personalityRouter)
 router.use('/test-mbti', isLoginMiddleware, testRouter)
+
 module.exports = router
