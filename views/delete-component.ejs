@@ -1,0 +1,24 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <h1>Delete Component</h1>
+    <table border="1px">
+        <tr>
+            <th>Komponen</th>
+            <th>Action</th>
+        </tr>
+        <% data.forEach(el => { %>
+        <tr>
+            <td><%= el.komponen %></td>
+            <td>
+                <a href="/component/delete/<%= el.id %>">
+                    <button type="button">
+                        Delete
+                    </button>
+                </a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+    <%- include('partials/foot.ejs') %>

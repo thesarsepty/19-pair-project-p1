@@ -3,6 +3,7 @@ const {
   Profile,
   ComponentProfile
 } = require('../models')
+const sendMail = require('../helpers/send-email.js')
 
 class MBTI {
   static chooseTestType(req, res) {
@@ -35,6 +36,7 @@ class MBTI {
 
     Profile.scoring(req.body)
       .then((data) => {
+        sendMail(req.session.dataName, data, req.session.dataEmail)
         id1 = mbti.getIE(data)
         id2 = mbti.getSN(data)
         id3 = mbti.getTF(data)
@@ -101,6 +103,7 @@ class MBTI {
 
     Profile.scoring(req.body)
       .then((data) => {
+        sendMail(req.session.dataName, data, req.session.dataEmail)
         id1 = mbti.getIE(data)
         id2 = mbti.getSN(data)
         id3 = mbti.getTF(data)

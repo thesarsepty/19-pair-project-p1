@@ -1,0 +1,12 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <h1>Add New Component</h1>
+    <form action="/component/add" method="post">
+        <label for="">Inisal Komponen</label>
+        <input type="text" name="komponen">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <%- include('partials/foot.ejs') %>
