@@ -6,35 +6,618 @@
     <h5>Pilihlah salah satu opsi yang paling menggambarkan diri anda di setiap kolom. <br> Tidak ada jawaban benar ataupun salah pada tes ini</h5>
     <form action="/test-mbti" method="post">
         <div class="card w-50">
-            <div class="card-body">
-                <div>
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Lebih memilih berkomunikasi dengan menulis
-                    </label>
-                </div>
-                <div>
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="2">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Lebih memilih berkomunikasi dengan bicara
-                    </label>
-                </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="e1" value="a">
+                <label class="form-check-label" for="e1">
+                    Lebih memilih berkomunikasi dengan menulis
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="i1" value="b">
+                <label class="form-check-label" for="i1">
+                    Lebih memilih berkomunikasi dengan bicara
+                </label>
             </div>
         </div>
         <div class="card w-50">
-            <div class="card-body">
-                <div>
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="3">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Lebih memilih berkomunikasi dengan menulis
-                    </label>
-                </div>
-                <div>
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="4">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Lebih memilih berkomunikasi dengan bicara
-                    </label>
-                </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="e2" value="a">
+                <label class="form-check-label" for="e2">
+                    Menemukan dan mengembangkan ide dengan merenung
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="i2" value="b">
+                <label class="form-check-label" for="i2">
+                    Menemukan dan mengembangkan ide dengan diskusi
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="e3" value="a">
+                <label class="form-check-label" for="e3">
+                    Beriorientasi pada dunia internal (memori, pemikiran, ide)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="i3" value="b">
+                <label class="form-check-label" for="i3">
+                    Berorientasi pada dunia eksternal (kegiatan, orang)
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="e4" value="a">
+                <label class="form-check-label" for="e4">
+                    Fokus pada sedikit hobi namun mendalam
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="i4" value="b">
+                <label class="form-check-label" for="i4">
+                    Fokus pada banyak hobi secara luas dan umum
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="e5" value="a">
+                <label class="form-check-label" for="e5">
+                    Tertutup dan mandiri
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="i5" value="b">
+                <label class="form-check-label" for="i5">
+                    Sosial dan ekspresif
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="e6" value="a">
+                <label class="form-check-label" for="e6">
+                    Pertemuan dengan orang lain dan aktivitas sosial melelahkan
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="i6" value="b">
+                <label class="form-check-label" for="i6">
+                    Bertemu orang dan aktivitas sosial membuat bersemangat
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="e7" value="a">
+                <label class="form-check-label" for="e7">
+                    Beraktifitas sendirian di rumah
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="i7" value="b">
+                <label class="form-check-label" for="i7">
+                    Beraktifitas di luar rumah
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="e8" value="a">
+                <label class="form-check-label" for="e8">
+                    Berinisiatif bila situasi memaksa atau berhubungan dengan kepentingan sendiri
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="i8" value="b">
+                <label class="form-check-label" for="i8">
+                    Berinisiatif tinggi hampir dalam berbagai hal meskipun tidak berhubungan dengan dirinya
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="e9" value="a">
+                <label class="form-check-label" for="e9">
+                    Lebih memilih tempat yang tenang dan pribadi untuk berkonsentrasi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="i9" value="b">
+                <label class="form-check-label" for="i9">
+                    Lebih memilih tempat yang ramai dan banyak interaksi / aktifitas
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="e10" value="a">
+                <label class="form-check-label" for="e10">
+                    Berpikir secara matang sebelum bertindak
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="i10" value="b">
+                <label class="form-check-label" for="i10">
+                    Berani bertindak tanpa terlalu lama berfikir
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q11" id="e11" value="a">
+                <label class="form-check-label" for="e11">
+                    Menyimpan semangat dalam hati
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q11" id="i11" value="b">
+                <label class="form-check-label" for="i11">
+                    Mengekspresikan semangat
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q12" id="s1" value="a">
+                <label class="form-check-label" for="s1">
+                    Bergerak dari detail ke gambaran umum sebagai kesimpulan akhir
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q12" id="n1" value="b">
+                <label class="form-check-label" for="n1">
+                    Bergerak dari gambaran umum baru ke detail </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q13" id="s2" value="a">
+                <label class="form-check-label" for="s2">
+                    Berbicara mengenai masalah yang dihadapi hari ini dan langkah-langkah praktis mengatasinya
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q13" id="n2" value="b">
+                <label class="form-check-label" for="n2">
+                    Berbicara mengenai visi misi masa depan dan konsep-konsep mengenai visi tersebut
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q14" id="s3" value="a">
+                <label class="form-check-label" for="s3">
+                    Menggunakan pengalaman sebagai pedoman
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q14" id="n3" value="b">
+                <label class="form-check-label" for="n3">
+                    Menggunakan imajinasi dan perenungan sebagai pedoman
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q15" id="s4" value="a">
+                <label class="form-check-label" for="s4">
+                    SOP sangat membantu
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q15" id="n4" value="b">
+                <label class="form-check-label" for="n4">
+                    SOP sangat membosankan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q16" id="s5" value="a">
+                <label class="form-check-label" for="s5">
+                    Prosedural dan tradisional
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q16" id="n5" value="b">
+                <label class="form-check-label" for="n5">
+                    Bebas dan dinamis
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q17" id="s6" value="a">
+                <label class="form-check-label" for="s6">
+                    Memilih fakta lebih penting daripada ide inspiratif
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q17" id="n6" value="b">
+                <label class="form-check-label" for="n6">
+                    Memilih ide inspiratif lebih penting daripada fakta
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q18" id="s7" value="a">
+                <label class="form-check-label" for="s7">
+                    Kontinuitas dan stabilitas lebih diutamakan
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q18" id="n7" value="b">
+                <label class="form-check-label" for="n7">
+                    Perubahan dan variasi lebih diutamakan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q19" id="s8" value="a">
+                <label class="form-check-label" for="s8">
+                    Bertindak step by step dengan timeframe yang jelas
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q19" id="n8" value="b">
+                <label class="form-check-label" for="n8">
+                    Bertindak dengan semangat tanpa menggunakan timeframe
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q20" id="s9" value="a">
+                <label class="form-check-label" for="s9">
+                    Menarik kesimpulan dengan lama dan hati-hati
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q20" id="n9" value="b">
+                <label class="form-check-label" for="n9">
+                    Menarik kesimpulan dengan cepat sesuai naluri
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q21" id="s10" value="a">
+                <label class="form-check-label" for="s10">
+                    Mengkarifikasi ide dan teori sebelum dipraktekan
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q21" id="n10" value="b">
+                <label class="form-check-label" for="n10">
+                    Memahami ide dan teori saat mempraktekannya langsung
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q22" id="s11" value="a">
+                <label class="form-check-label" for="s11">
+                    Berfokus pada masa kini (apa yang bisa di perbaiki sekarang)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q22" id="n11" value="b">
+                <label class="form-check-label" for="n11">
+                    Berfokus pada masa depan (apa yang mungkin dicapai di masa depan)
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q23" id="t1" value="a">
+                <label class="form-check-label" for="t1">
+                    Objektif
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q23" id="f1" value="b">
+                <label class="form-check-label" for="f1">
+                    Subjektif
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q24" id="t2" value="a">
+                <label class="form-check-label" for="t2">
+                    Diyakinkan dengan penjelasan yang masuk akal
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q24" id="f2" value="b">
+                <label class="form-check-label" for="f2">
+                    Diyakinkan dengan penjelasan yang menyentuh perasaan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q25" id="t3" value="a">
+                <label class="form-check-label" for="t3">
+                    Berorientasi tugas dan job description
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q25" id="f3" value="b">
+                <label class="form-check-label" for="f3">
+                    Berorientasi pada manusia dan hubungan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q26" id="t4" value="a">
+                <label class="form-check-label" for="t4">
+                    Mengambil keputusan berdasarkan logika dan aturan main
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q26" id="f4" value="b">
+                <label class="form-check-label" for="f4">
+                    Mengambil keputusan berdasar perasaan pribadi dan kondisi orang lain
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q27" id="t5" value="a">
+                <label class="form-check-label" for="t5">
+                    Mengemukakan tujuan dan sasaran lebih dahulu
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q27" id="f5" value="b">
+                <label class="form-check-label" for="f5">
+                    Mengemukakan kesepakatan terlebih dahulu
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q28" id="t6" value="a">
+                <label class="form-check-label" for="t6">
+                    Menganalisa
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q28" id="f6" value="b">
+                <label class="form-check-label" for="f6">
+                    Berempati
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q29" id="t7" value="a">
+                <label class="form-check-label" for="t7">
+                    Menghargai seseorang karena skill dan faktor sejenis
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q29" id="f7" value="b">
+                <label class="form-check-label" for="f7">
+                    Menghargai seseorang karena sifat dan perilakunya
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q30" id="t8" value="a">
+                <label class="form-check-label" for="t8">
+                    Melibatkan perasaan itu tidak profesional
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q30" id="f8" value="b">
+                <label class="form-check-label" for="f8">
+                    Terlalu kaku pada peraturan dan pekerjaan itu kejam
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q31" id="t9" value="a">
+                <label class="form-check-label" for="t9">
+                    Yang penting tujuan tercapai
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q31" id="f9" value="b">
+                <label class="form-check-label" for="f9">
+                    Yang penting situasi harmonis terjaga
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q32" id="t10" value="a">
+                <label class="form-check-label" for="t10">
+                    Mempertanyakan
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q32" id="f10" value="b">
+                <label class="form-check-label" for="f10">
+                    Mengakomodasi
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q33" id="t11" value="a">
+                <label class="form-check-label" for="t11">
+                    Sering dianggap keras kepala
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q33" id="f11" value="b">
+                <label class="form-check-label" for="f11">
+                    Sering dianggap terlalu memihak
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q34" id="p1" value="a">
+                <label class="form-check-label" for="p1">
+                    Spontan, fleksibel, tidak diikat waktu
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q34" id="j1" value="b">
+                <label class="form-check-label" for="j1">
+                    Terencana dan memiliki deadline jelas
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q35" id="p2" value="a">
+                <label class="form-check-label" for="p2">
+                    Perubahan mendadak tidak jadi masalah
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q35" id="j2" value="b">
+                <label class="form-check-label" for="j2">
+                    Tidak menyukai hal-hal yang bersifat mendadak dan di luar perencanaan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q36" id="p3" value="a">
+                <label class="form-check-label" for="p3">
+                    Aturan, jadwal dan target sangat mengikat dan membebani
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q36" id="j3" value="b">
+                <label class="form-check-label" for="j3">
+                    Aturan, jadwal dan target akan sangat membantu dan memperjelas tindakan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q37" id="p4" value="a">
+                <label class="form-check-label" for="p4">
+                    Berorientasi pada proses
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q37" id="j4" value="b">
+                <label class="form-check-label" for="j4">
+                    Berorientasi pada hasil
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q38" id="p5" value="a">
+                <label class="form-check-label" for="p5">
+                    Membiarkan orang lain bertindak bebas asalkan tujuan tercapai
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q38" id="j5" value="b">
+                <label class="form-check-label" for="j5">
+                    Mengatur orang lain dengan tata tertib agar tujuan tercapai
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q39" id="p6" value="a">
+                <label class="form-check-label" for="p6">
+                    Memperhatikan hal-hal baru dan siap menyesuaikan diri serta mengubah target
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q39" id="j6" value="b">
+                <label class="form-check-label" for="j6">
+                    Fokus pada target dan mengabaikan hal-hal baru
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q40" id="p7" value="a">
+                <label class="form-check-label" for="p7">
+                    Pendirian masih bisa berubah tergantung situasi nantinya
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q40" id="j7" value="b">
+                <label class="form-check-label" for="j7">
+                    Berpegang teguh pada pendirian
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q41" id="p8" value="a">
+                <label class="form-check-label" for="p8">
+                    Merasa nyaman bila situasi tetap terbuka terhadap pilihan-pilihan lain
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q41" id="j8" value="b">
+                <label class="form-check-label" for="j8">
+                    Merasan tenang bila semua sudah diputuskan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q42" id="p9" value="a">
+                <label class="form-check-label" for="p9">
+                    Ketidakpastian itu seru, menegangkan dan membuat hati lebih senang
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q42" id="j9" value="b">
+                <label class="form-check-label" for="j9">
+                    Ketidakpastian membuat bingung dan meresahkan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q43" id="p10" value="a">
+                <label class="form-check-label" for="p10">
+                    Situasi last minute membuat bersemangat dan memunculkan potensi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q43" id="j10" value="b">
+                <label class="form-check-label" for="j10">
+                    Situasi last minute sangat menyiksa, membuat stress dan merupakan kesalahan
+                </label>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q44" id="p11" value="a">
+                <label class="form-check-label" for="p11">
+                    Hidup seharusnya mengalir sesuai kondisi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q44" id="j11" value="b">
+                <label class="form-check-label" for="j11">
+                    Hidup harus sudah diatur dari awal
+                </label>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

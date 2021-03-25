@@ -6,7 +6,7 @@ class MBTI {
   }
 
   static testResult(req, res) {
-
+    console.log(req.body)
   }
 }
 
