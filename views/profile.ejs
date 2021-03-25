@@ -2,5 +2,16 @@
 
 <body>
     <%- include('partials/navbar.ejs') %>
-    <h1>Profile</h1> <!-- h1 ini nanti diisi nama -->
+    <% let fullKomponen = '' %>
+    <% data.Components.forEach(el => { %>
+    <% fullKomponen += el.komponen %>
+    <!-- <h1><%= el.komponen %></h1> -->
+    <% }) %>
+    <h1>Halo, <%= data.name %></h1>
+    <h3><%= fullKomponen %></h3>
+
+    <h5>Ingin tahu lebih banyak tentang kepribadianmu?</h5>
+
+    <a href="/personalities"><button type="button">Click Me!</button></a>
+
     <%- include('partials/foot.ejs') %>

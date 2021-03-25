@@ -7,7 +7,15 @@ const {
 
 class ProfileController {
   static profilePage(req, res) {
-    res.render('profile')
+    Profile.findByPk(+req.session.dataId, {
+        include: Component
+      })
+      .then(data => {
+        res.render('profile', {
+          data
+        })
+      })
+      .catch(err => res.send(err))
   }
 }
 
