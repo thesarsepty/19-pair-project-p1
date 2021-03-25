@@ -10,7 +10,6 @@ class Login {
   }
 
   static loginCheck(req, res, next) {
-
     Profile.findOne({
         where: {
           email: req.body.email,
@@ -19,6 +18,10 @@ class Login {
       .then((data) => {
         let password = BcryptPassword.checkHash(req.body.password, data.password)
         if (password) {
+          req.session.dataId = data.id
+          req.session.dataName = data.name
+          req.session.dataEmail = data.email
+          req.session.isAdmin = data.isAdmin
           req.session.isLogin = true
           res.redirect('/')
         } else {

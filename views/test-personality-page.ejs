@@ -3,4 +3,40 @@
 <body>
     <%- include('partials/navbar.ejs') %>
     <h1>Myers-Brigg Type Indicator Test</h1>
+    <h5>Pilihlah salah satu opsi yang paling menggambarkan diri anda di setiap kolom. <br> Tidak ada jawaban benar ataupun salah pada tes ini</h5>
+    <form action="/test-mbti" method="post">
+        <div class="card w-50">
+            <div class="card-body">
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Lebih memilih berkomunikasi dengan menulis
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="2">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Lebih memilih berkomunikasi dengan bicara
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card w-50">
+            <div class="card-body">
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="3">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Lebih memilih berkomunikasi dengan menulis
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="skor" value="4">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Lebih memilih berkomunikasi dengan bicara
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     <%- include('partials/foot.ejs') %>
