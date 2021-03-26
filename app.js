@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.port || 3000
+const port = process.env.PORT
 const router = require('./routes/index.js')
 const session = require('express-session')
 
@@ -19,5 +19,5 @@ app.use(express.urlencoded({
 app.use('/', router)
 
 app.listen(port, () => {
-  console.log(`Server running at port: ${port}`)
+  console.log(`Server running at port: ${PORT}`)
 })
