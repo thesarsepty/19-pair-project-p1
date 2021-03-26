@@ -78,7 +78,6 @@ class MBTI {
   }
 
   static retestPage(req, res) {
-    console.log(req.session.dataId)
     ComponentProfile.findOne({
         where: {
           ProfileId: req.session.dataId
