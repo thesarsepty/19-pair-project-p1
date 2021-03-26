@@ -2,5 +2,36 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>INTP</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>INTP</h1>
+                    <h4>Introverted Intuitive Thinking Perceiving</h4>
+                    <p>Si Arsitek yang suka menerima dan menganalisa informasi. Mereka memilih untuk bekerja sendiri dengan standar yang tinggi. Para INTP adalah pengamat yang baik dan menerapkan logika pada hampir semua hal yang dilakukannya. Mereka pun biasanya sulit dipahami dan merupakan tipe yang langka; hanya sekitar 1% dari total populasi dunia.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Sangat menghargai intelektualitas dan pengetahuan. Menikmati hal-hal teoritis dan ilmiah. Senang memecahkan masalah dengan logika dan analisa.</p>
+                        <p>• Diam dan menahan diri. Lebih suka bekerja sendiri.</p>    
+                        <p>• Cenderung kritis, skeptis, mudah curiga dan pesimis.</p>   
+                        <p>• Tidak suka memimpin dan bisa menjadi pengikut yang tidak banyak menuntut.</p> 
+                        <p>• Cenderung memiliki minat yang jelas. Membutuhkan karir dimana minatnya bisa berkembang dan bermanfaat. Jika menemukan sesuatu yang menarik minatnya, ia akan sangat serius dan antusias menekuninya.</p>       
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

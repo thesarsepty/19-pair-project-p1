@@ -29,6 +29,7 @@ class Login {
         }
       })
       .catch(err => res.send(err))
+        
   }
 }
 

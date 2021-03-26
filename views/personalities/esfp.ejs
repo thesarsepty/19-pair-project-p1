@@ -2,5 +2,35 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ESFP</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ESFP</h1>
+                    <h4>Extraverted Sensing Feeling Perceiving</h4>
+                    <p>Para ESFP adalah sosok yang ramah, menghibur dan memiliki selera humor yang baik. Keberadaan mereka mampu membuat orang lain melupakan sejenak masalah mereka dan menikmati hidup. Ada sekitar lebih dari 10% ESFP di dunia ini dan mereka selalu optimis menjalani hidup.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Outgoing, easygoing, mudah berteman, bersahabat, sangat sosial, ramah, hangat, & menyenangkan.</p>
+                        <p>• Optimis, ceria, antusias, fun, menghibur, suka menjadi perhatian.</p>    
+                        <p>• Punya interpersonal skill yang baik, murah hati, mudah simpatik dan mengenali perasaan orang lain. Menghindari konflik dan menjaga keharmonisan suatu hubungan.</p>   
+                        <p>• Mengetahui apa yang terjadi di sekelilingnya dan ikut serta dalam kegiatan tersebut.</p>        
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

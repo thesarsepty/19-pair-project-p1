@@ -116,7 +116,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notEmpty: {
-          msg: 'Nama tidak boleh kosong!'
+          msg: 'Email tidak boleh kosong!'
         }
       }
     },
@@ -125,7 +125,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notEmpty: {
-          msg: 'Nama tidak boleh kosong!'
+          msg: 'Password tidak boleh kosong!'
         }
       }
     },

@@ -2,6 +2,7 @@
 
 <body>
     <%- include('partials/navbar.ejs') %>
+    <div style="margin-left: 32px;">
     <h1>Delete Component</h1>
     <table border="1px">
         <tr>
@@ -13,12 +14,11 @@
             <td><%= el.komponen %></td>
             <td>
                 <a href="/component/delete/<%= el.id %>">
-                    <button type="button">
-                        Delete
-                    </button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
                 </a>
             </td>
         </tr>
         <% }) %>
     </table>
+</div>
     <%- include('partials/foot.ejs') %>

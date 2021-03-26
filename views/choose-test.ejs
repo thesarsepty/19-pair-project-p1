@@ -2,10 +2,44 @@
 
 <body>
     <%- include('partials/navbar.ejs') %>
-    <a href="/test-mbti/first-test">
-        <button>Test baru</button>
-    </a>
-    <a href="/test-mbti/retest">
-        <button>Ulangi test anda</button>
-    </a>
+<div class="container-before-test">
+        <div class="rule-box">
+                <div>
+                    <img src="https://satumediadev.oss-ap-southeast-5.aliyuncs.com/static/Whats_App_Image_2020_11_08_at_10_53_28_AM_de64797f06.jpeg" alt="" class="home-img">
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 50rem;">
+                <div class="card-header"><h4>Baca panduan pengisiannya, yuk!</h4></div>
+                <div class="card-body">
+                  <p class="text-secondary">1. Gak ada jawaban yang benar atau salah. Isilah dengan jujur sesuai kepribadianmu.</p>
+                  <p class="text-secondary">2. Santai aja, tes ini gak diberi waktu, kok.</p>
+                  <p class="text-secondary">3. Cari tempat yang nyaman dan kondusif supaya kamu lebih fokus.</p>
+                  <p class="text-secondary">4. Jika kamu keluar di tengah tes, maka seluruh proses tes dan jawaban akan hilang.</p>
+                  <p class="text-secondary">5. Hasil tes bisa kamu dapatkan setelah mengisi semua pertanyaan dengan lengkap.</p>
+                  <h6>Selamat Mengerjakan Test :)</h6>
+                </div>
+              </div>
+            </div><br>
+            <div class="btn-group btn-test" role="group" aria-label="Basic example">
+                <a href="/test-mbti/first-test"><button type="button" class="btn btn-outline-primary">Test Baru</button></a>
+                <a href="/test-mbti/retest"><button type="button" class="btn btn-outline-primary">Test Ulang</button></a>
+            </div>
+            
+</div>
     <%- include('partials/foot.ejs') %>
+
+    <style>
+    .rule-box {
+        /* margin-top: 56px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .home-img {
+         width: 700px;
+         margin-bottom: 24px;  
+        }
+        .btn-test {
+         display: flex;
+         justify-content: center;   
+        }
+    </style>

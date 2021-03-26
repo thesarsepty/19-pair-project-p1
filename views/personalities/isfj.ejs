@@ -2,5 +2,35 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ISFJ</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ISFJ</h1>
+                    <h4>Introverted Sensing Feeling Judging</h4>
+                    <p>Setidaknya ada 10% Pelindung di bumi ini. Mereka memiliki kepribadian yang hangat dan selalu mementingkan orang lain. Para ISFJ umumnya rajin dan pekerja keras. Mereka tidak menyukai perubahan dan sangat menghargai tradisi.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Penuh pertimbangan, hati-hati, teliti dan akurat.</p>
+                        <p>• Serius, tenang, stabil namun sensitif.</p>    
+                        <p>• Ramah, perhatian pada perasaan & kebutuhan orang lain, setia, kooperatif, pendengar yang baik.</p>   
+                        <p>• Punya kemampuan mengorganisasi, detail, teliti, sangat bertanggungjawab & bisa diandalkan.</p>        
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

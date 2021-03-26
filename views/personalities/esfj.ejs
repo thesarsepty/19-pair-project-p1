@@ -2,5 +2,35 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ESFJ</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ESFJ</h1>
+                    <h4>Extraverted Sensing Feeling Judging</h4>
+                    <p>Para ESFJ senang menjadi pusat perhatian. Mereka aktif dan menyukai interaksi sosial. Sekitar 10% dari total populasi dunia adalah ESFJ. Mereka rela memberikan waktu dan tenaga untuk memastikan kebutuhan orang lain terpenuhi. Perasaan mereka pun sangat sensitif, sehingga terkadang mereka terlalu memusingkan apa yang orang lain pikirkan tentang mereka.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Hangat, banyak bicara, populer, dilahirkan untuk bekerjasama, suportif dan anggota kelompok yang aktif.</p>
+                        <p>• Membutuhkan keseimbangan dan baik dalam menciptakan harmoni.</p>    
+                        <p>• Selalu melakukan sesuatu yang manis bagi orang lain. Kerja dengan baik dalam situasi yang mendukung dan memujinya.</p> <p>• Santai, easy going, sederhana, tidak berfikir panjang.</p>
+                        <p>• Teliti dan rajin merawat apa yang ia miliki.</p>        
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

@@ -2,5 +2,36 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ESTP</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ESTP</h1>
+                    <h4>Extraverted Sensing Thinking Perceiving</h4>
+                    <p>Promotor menyukai aktivitas dan tantangan baru. Mereka mempesoona, percaya diri, dan populer. Mereka tidak menyukai hal yang detil. 10% dari penduduk bumi adalah ESTP dan hampir semuanya memiliki jiwa petualang yang tinggi.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>•Spontan, Aktif, Enerjik, Cekatan, Cepat, Sigap, Antusias, Fun dan penuh variasi.</p>
+                        <p>• Komunikator, asertif, to the point, ceplas-ceplos, berkarisma, punya interpersonal skill yang baik.</p>    
+                        <p>• Baik dalam pemecahan masalah langsung di tempat. Mampu menghadapi masalah, konflik dan kritik. Tidak khawatir, menikmati apapun yang terjadi.</p>   
+                        <p>• Cenderung untuk menyukai sesuatu yang mekanistis, kegiatan bersama dan olahraga.</p>
+                        <p>• Mudah beradaptasi, toleran, pada umumnya konservatif tentang nilai-nilai. Tidak suka penjelasan terlalu panjang. Paling baik dalam hal-hal nyata yang dapat dilakukan.</p>        
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

@@ -2,5 +2,37 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ENTJ</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ENTJ</h1>
+                    <h4>Extraverted Intuitive Thinking Judging</h4>
+                    <p>Seorang yang optimis dan selalu melihat kesempatan dalam setiap hal. Para ENTJ tidak takut untuk memimpin dan memiliki kemampuan leadership yang baik. Si Komandan yang ambisius ini mengisi sekitar 2% dari populasi dunia.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Tegas, asertif, to the point, jujur terus terang, obyektif, kritis, & punya standard tinggi.</p>
+                        <p>• Dominan, kuat kemauannya, perfeksionis dan kompetitif.</p>    
+                        <p>• Tangguh, disiplin, dan sangat menghargai komitmen.</p>   
+                        <p>• Cenderung menutupi perasaan dan menyembunyikan kelemahan.</p>  
+                        <p>• Berkarisma, komunikasi baik, mampu menggerakkan orang.</p>      
+                        <p>• Berbakat pemimpin.</p>      
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

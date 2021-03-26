@@ -2,5 +2,36 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ISTP</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ISTP</h1>
+                    <h4>Introverted Sensing Thinking Perceiving</h4>
+                    <p>Sekitar 10% manusia di dunia adalah seorang ISTP. Mereka cakap dalam aktivitas yang memerlukan alat. Si Perajin umumnya kurang mampu berekspresi dengBerbakat pemimpin.an baik sehingga terkadang dikucilkan dalam lingkaran pergaulan. Para ISTP tidak menyukai peraturan walaupun tidak secara langsung menantangnya. Mereka menyukai kebebasan dan tantangan.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Tenang, pendiam, cenderung kaku, dingin, hati-hati, penuh pertimbangan.</p>
+                        <p>• Logis, rasional, kritis, obyektif, mampu mengesampingkan perasaan.</p>    
+                        <p>• Mampu menghadapi perubahan mendadak dengan cepat dan tenang.</p>   
+                        <p>• Percaya diri, tegas dan mampu menghadapi perbedaan maupun kritik.</p> 
+                        <p>• Mampu menganalisa, mengorganisir, & mendelegasikan.</p>       
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

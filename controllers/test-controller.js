@@ -73,7 +73,7 @@ class MBTI {
 
         return ComponentProfile.create(obj)
       })
-      .then(() => res.redirect('/'))
+      .then(() => res.redirect('/profile'))
       .catch(err => res.send(err))
   }
 
@@ -160,7 +160,7 @@ class MBTI {
           }
         })
       })
-      .then(() => res.redirect('/'))
+      .then(() => res.redirect('/profile'))
       .catch(err => res.send(err))
   }
 }

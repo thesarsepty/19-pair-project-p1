@@ -2,11 +2,33 @@
 
 <body>
     <%- include('partials/navbar.ejs') %>
+    <div style="height: 24px;"></div>
     <h1>Add New Component</h1>
     <form action="/component/add" method="post">
-        <label for="">Inisal Komponen</label>
-        <input type="text" name="komponen">
+        <div class="form-add-component">
+        <div class="form-group">
+            <label class="col-form-label" for="inputDefault">Inisial Komponen</label>
+            <input type="text" class="form-control input-initial" placeholder="Inisial Komponen" id="inputDefault" name="komponen">
+        </div>
         <br>
-        <button type="submit">Submit</button>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-secondary">Add</button>
+            <a href="/profile"><button type="button" class="btn btn-secondary">Cancel</button></a>
+        </div>
+    </div>
     </form>
+    
+    <style>
+        .input-initial {
+            width: 200px;
+        }
+        .form-add-component {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        }
+        h1 {
+        text-align: center;    
+        }
+    </style>
     <%- include('partials/foot.ejs') %>

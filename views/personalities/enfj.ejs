@@ -2,7 +2,37 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ENFJ</h1>
-
-    <p><i>"Setiap hal yang anda lakukan sekarang bergerak perlahan dan memengaruhi semua orang. Postur Anda dapat menerangi hati Anda atau menularkan kecemasan. Napas Anda dapat memancarkan cinta atau mengeruhkan ruangan dalam kegundahan. Lirikan Anda dapat melahirkan kesenangan. Kata-kata Anda dapat menginspirasikan kebebasan. Setiap tindakan Anda dapat membuka hati dan pikiran"</i></p>
+    
+    <div class="container1">
+    <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active show" id="home">
+            <h1>ENFJ</h1>
+            <h4>Extraverted Intuitive Feeling Judging</h4>
+            <p>Sosok yang karismatik yang mudah berhubungan dengan orang lain. Para ENFJ adalah sosok yang ramah dan mungkin merupakan sosok yang paling ekspresif dibandingkan tipe kepribadian lainnya. Mereka hebat dalam berkomunikasi dan menyukai keteraturan. Mereka juga sensitif terhadap orang lain. Ada sekitar 2% dari populasi dunia adalah seorang ENFJ.</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <h3>Ciri - ciri</h3>
+                <p>• Kreatif, imajinatif, peka, sensitive, loyal.</p>
+                <p>• Pada umumnya peduli pada apa kata orang atau apa yang orang lain inginkan dan cenderung melakukan sesuatu dengan memperhatikan perasaan orang lain.</p>    
+                <p>• Pandai bergaul, meyakinkan, ramah, fun, populer, simpatik. Responsif pada kritik dan pujian.</p>   
+                <p>• Menyukai variasi dan tantangan baru.</p>  
+                <p> • Butuh apresiasi dan penerimaan.</p>      
+            </div>
+        </div>
+    </div>   
+    <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+    <style>
+    .container1{
+        
+        margin-right: 800px;
+    }
+    </style>
     <%- include('../partials/foot.ejs') %>

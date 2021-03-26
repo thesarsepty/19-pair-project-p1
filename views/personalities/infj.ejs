@@ -2,5 +2,35 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>INFJ</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>INFJ</h1>
+                    <h4>Seorang visioner yang lebih menyukai bekerja dengan lingkaran pertemanan yang kecil. Meskipun begitu, mereka mampu bekerja secara efektif dalam organisasi karena mereka menjunjung keharmonisan antar karyawan. Si Penasihat ini juga dikenal sebagai orang yang paling puitis dibandingkan dengan tipe kepribadian lainnya. Ada sekitar 3% populasi dunia dengan tipe kepribadian ini.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Perhatian, empati, sensitif & berkomitmen terhadap sebuah hubungan..</p>
+                        <p>• Sukses karena ketekunan, originalitas dan keinginan kuat untuk melakukan apa saja yang diperlukan termasuk memberikan yg terbaik dalam pekerjaan.</p>    
+                        <p>• Idealis, perfeksionis, memegang teguh prinsip.</p>   
+                        <p>• Visioner, penuh ide, kreatif, suka merenung dan inspiring.</p>   
+                        <p>• Biasanya diikuti dan dihormati karena kejelasan visi serta dedikasi pada hal-hal baik.</p>     
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

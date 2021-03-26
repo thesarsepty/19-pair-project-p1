@@ -1,27 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
+<%- include('partials/head.ejs') %>
 
 <body>
+    <div style="height: 24px;"></div>
     <h1>Register Page</h1>
+    <div class="form-register">
     <form action="/register" method="POST">
-        <label>Name</label>
-        <input type="text" name="name">
+        <div class="form-group"> 
+            <label for="name">Name</label>
+             <input type="text" class="form-control email-login-text" id="name" placeholder="Enter name" name="name">
+        </div>
         <br>
-        <label>Email</label>
-        <input type="email" name="email">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+             <input type="email" class="form-control email-login-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
         <br>
-        <label>Password</label>
-        <input type="password" name="password">
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control password-login-text" id="exampleInputPassword1" placeholder="Password" name="password">
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <a href="/"><button type="button" class="btn btn-primary">Cancel</button></a><br>
     </form>
-</body>
+    </div>
 
-</html>
+    <style>
+        .email-login-text{
+         width: 350px;
+         }
+        .password-login-text{
+         width: 350px;
+         }
+        .form-register{
+       display: flex;
+        align-items: center;
+         flex-direction: column;
+        }
+        h1 {
+           text-align: center;  
+        }   
+    </style>

@@ -2,5 +2,35 @@
 
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>ISTJ</h1>
+    <div class="container1">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Penjelasan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#profile">Ciri - ciri</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="home">
+                    <h1>ISTJ</h1>
+                    <h4>Introverted Sensing Thinking Judging</h4>
+                    <p>Si Pengawas yang logis dan selalu berfikir berdasarkan fakta. Mereka adalah pekerja keras yang sangat teratur dan mematuhi peraturan. Jumlah mereka ada sekitar 10% di dunia ini. Mereka cukup aktif bersosialisasi walaupun cenderung pemalu dalam kelompok yang besar. Para ISTJ pun umumnya sederhana dan menyukai benda-benda kuno.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Ciri - ciri</h3>
+                        <p>• Serius, tenang, stabil & damai.</p>
+                        <p>• Senang pada fakta, logis, obyektif, praktis & realistis.</p>    
+                        <p>• Task oriented, tekun, teratur, menepati janji, dapat diandalkan & bertanggung jawab.</p>   
+                        <p>• Pendengar yang baik, setia, hanya mau berbagi dengan orang dekat.</p>        
+                    </div>
+                </div>
+            </div>   
+            <a href="/personalities"><button type="button" class="btn btn-outline-danger">Go Back</button></a>
+            <style>
+            .container1{
+                
+                margin-right: 800px;
+            }
+            </style>
     <%- include('../partials/foot.ejs') %>

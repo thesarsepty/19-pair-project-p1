@@ -7,13 +7,39 @@
     <% fullKomponen += el.komponen %>
     <!-- <h1><%= el.komponen %></h1> -->
     <% }) %>
-    <h1>Halo, <%= data.name %></h1>
-    <h3><%= fullKomponen %></h3>
-    <a href="/component/add"><button type="button">Tambah Komponen</button></a>
-    <a href="/component/delete"> <button type="button">Hapus Komponen</button></a>
+    <div style="height: 24px;"></div>
+    <div class="profile-form">
+    <h1>Halo, <%= data.name %> !</h1>
+    <img src="http://clipart-library.com/new_gallery/280-2806732_png-file-svg-default-profile-picture-png.png" alt="" class="profile-img">
+    <h3>Type Kepribadianmu adalah : <%= fullKomponen %></h3>
+    <!-- <a href="/component/add"><button type="button" class="btn btn-primary btn-lg btn-block">Tambah Komponen</button></a>
+    <a href="/component/delete"><button type="button" class="btn btn-primary btn-lg btn-block">Hapus Komponen</button></a> -->
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <a href="/component/add"><button type="button" class="btn btn-secondary">Tambah Komponen</button></a>
+        <a href="/component/delete"><button type="button" class="btn btn-secondary">Hapus Komponen</button></a>
+    </div><br>
 
-    <h5>Ingin tahu lebih banyak tentang kepribadianmu?</h5>
+    <h4>Ingin tahu lebih banyak tentang kepribadianmu?</h4>
+    <a href="/personalities"><button type="button" class="btn btn-primary btn-lg">Click Me!</button></a>
+    <!-- <a href="/personalities"><button type="button">Click Me!</button></a> -->
+    </div>
+    
+    <style>
 
-    <a href="/personalities"><button type="button">Click Me!</button></a>
+    .profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    }    
+    
+    .profile-img{
+    width: 300px;
+    }
+   
+    </style>
+        
 
     <%- include('partials/foot.ejs') %>
+
+    
